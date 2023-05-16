@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: demo-deployment2
-          image: jumpingjacks.azurecr.io/mbaoma/demo-app 
+          image: mbaoma/demo-app 
           # image: demo-app:latest
           resources:
             limits:

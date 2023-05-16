@@ -61,7 +61,7 @@ $ kubectl get service
 
 Navigate to the IP provided under ```External-IP```
 
-<img width="1016" alt="image" src="https://github.com/Mbaoma/SCA-Cloud-School-Application/assets/49791498/cde6914d-084b-4ab3-b96e-6ed21e4e96c8">
+<img width="1016" alt="image" src="https://github.com/Mbaoma/SCA-Cloud-School-Application/assets/49791498/2d1e0d48-1c6b-4e8b-9c13-8ec98eb83bad">
 
 ### Debugging
 ```bash
@@ -70,4 +70,9 @@ $ kubectl get logs <pod-name>
 $ kubectl describe pod <pod-name>
 $ kubectl describe service <service-name>
 $ kubectl describe deployment <deployment>
+```
+
+### Clean up
+```bash
+$ az group delete --name myResourceGroup --yes --no-wait
 ```
