@@ -27,8 +27,7 @@ $ az acr create --resource-group myResourceGroup --name <acrName> --sku Basic
 $ az acr login --name <acrName>
 $ docker tag docker-image:tag <acrLoginServer>/image-name:tag
 $ docker images
-$ docker push <acrLoginServer>/azure-vote-front:v1
-$ 
+$ docker push <acrLoginServer>/image-name:tag
 ```
 
 - Get your image name and tag
