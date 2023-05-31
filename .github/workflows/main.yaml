@@ -1,0 +1,12 @@
+name: Publish Docker image to GitHub Container Registry
+ 
+on: [push]
+
+jobs:
+  push_to_registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build and Push Docker Image
+        uses: Mbaoma/build-image@v1.0
