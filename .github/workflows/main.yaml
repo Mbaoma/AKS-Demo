@@ -6,7 +6,5 @@ jobs:
   push_to_registry:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Build and Push Docker Image
-        uses: Mbaoma/build-image@v1.0
+      - name: Build, Tag and Push Docker Image to GHCR
+        uses: GlueOps/github-actions-build-push-containers@v0.1.1
